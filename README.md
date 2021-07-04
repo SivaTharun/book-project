@@ -49,6 +49,8 @@ First, clone the repository.
 4. Run `yarn start` to start the development server
 5. Open `localhost:3000`
 
+Note that you'll be able to use the app without running the backend by manually editing the route (URL). However, some features (e.g. creating an account and logging in) require the backend to be running.
+
 ### Running the backend
 
 1. Import the `backend` directory as a Maven project into your favourite IDE (or run Maven on the terminal)
@@ -76,6 +78,14 @@ You may find lots of errors for things like the log statements, or the entities 
 You can find instructions on fixing this for IntelliJ and Eclipse in our [troubleshooting wiki page](https://github.com/knjk04/book-project/wiki/Troubleshooting). 
 Other common errors and solutions are also on the troubleshooting page.
 
+### Test user
+
+When running the frontend and backend, or only the backend, you can use the following test user:
+- Email address: `user@user.user`
+- Password: `password`
+
+If you're running the backend, you will need a JWT token for subsequent requests after logging in or creating an account; see our [connecting to the backend](https://github.com/Project-Books/book-project/wiki/Connecting-to-the-backend-via-Postman) wiki page.
+
 ### Access database
 
 To access the MySQL database when docker-compose is running:
@@ -86,7 +96,7 @@ To access the MySQL database when docker-compose is running:
     - Password: `rootpassword`
 3. Click on connect
 
-Alternatively, you can access the database inside [IntelliJ Ultimate](https://github.com/Project-Books/book-project/wiki/Connect-to-database-inside-IntelliJ-Ultimate).
+Alternatively, you can access the database inside [IntelliJ Ultimate](https://project-books.github.io/docs/development/how-to/database-intellij/).
 
 ## Contributing
 
